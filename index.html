@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="حاسبة الرواتب">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f6e56">
+<title>حاسبة الرواتب</title>
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAG3UlEQVR4nO3dvXUkRRSG4Tt7sHCABAiBcCAFLLCJABtZpIDCIQQlINZZFwxOr1q93V1VXT/93VvvY3GAMxpVv7qqGc3UPOxG3/zy4793fn308/Hp+XHH1x32RYkXIyLv+gWIGEd6xd3lRgkZuVqH3fTGCBlXtQq7yY0QMlqpDftD7R0gZrRU21NV0MSMHmq6ujTeCRmjlG5Biie0MWOk0t6KgiZm3KGku+ygiRl3yu0vK2hihoKcDpNBEzOUpHqsfh4aUHIaNNMZis66PAyamKHsqM/doIkZHux1yh4aoXwRNNMZnmx7ZUIjlHdBM53h0bpbJjRC+Rw00xmeLf0yoREKQSOUhxnbDcTBhEYoBI1QCBqhEDRC+cADQkTChEYoBI1QCBqhfHX3HYjgnz/+anZb3/76U7PbmtGDB4VpLYOtRfDnCHqHUsApBP4eQZuvgFNmD3zaoFtG/PLptdltff/1d81ua8a4pwr6asQtg611NfhZ4g4f9JWIlQJOuRJ45LjDBl0SsqeAU0oCjxh2uKBzQ44U8ZHcuCOFHSbonJBniPhITtwRwg7xp+9UzC+fXqeO2SxvDSI8fel6QueEjH2pie11Wrud0GcxM5HTUmvkdVq7DPposQm53NmaeYza1ZbjLGS0cbQV8bIFcTOhiXkM79PaRdDEPJbnqOWD3ltE9sr9Ha2xetTyQW8R8lje1ls6aPVpMCvl6yIb9NFWA+N52nrIBr1FzPfysv6SQW9/+r0sZnTb66A4pSWDBq6SC5rprE19SssFDdSQClrtpx15lK6bVNBbbDc0KV8XzrYzsx9++/nuu9DM37//efdduJX0hAZKETRCIWiEQtAIhQeFxgOpSKQndMuTONGO8nWRCtrLGzHxntJ1kwoaqCUX9PanXfnX24y210NpOpsJBg3UkAyaKa1JfTqbiQa9h6jv5WX9ZYPe++n3sqjR7K274nQ2Ew7aTHfRZqd8XaSD3sOUHsvbessHfbT18LbQ3hytsfJ0NnMQtNnxIhJ1H56P1HUR9Nl71oi6rbP1VHrv4BH5oHMWkS1Ivdw1VI/a3ctHlzdo7i3+8u+U38Sp5izis7VWJT2hUx8MdISJnZZaI68fKCT7GSslp4+m4mViv7m6Vl6e8ZCe0GtnUaaCZWLnrUHNGquQnNA159vlhuvlAtXosRbqL1By96AwJfeBzPq/R4q75DdRpO97ITehW58+emWr4elC3/H9KU/pcBN6a33xci/+9v9TCvzqYwGl76EnqQk98nNVWj5IbHkfVe/XmvIzHtITuudUuTK5jyg9gzJiEr98epX6ntekgx5lG4Hqxdozy1YiF0HvUA6cgM8RdIacP9yM+lo4R9ANEKEON3/6BnIQNEKRDlrpwRjeKF8XqaBVnpxHGaXrJhU0UEsuaM6106b8wiQzwaCBGpJBM6U1qU9nM9Gg9xD1vbysv2zQnD6qQ/nloluyQZvpLtrslK+LdNB7mNJjeVtv+aA5ffQenD7aEaePjsXpo51x+ug4nD7aGaePjsHpozfh9NG2OH10IE4f7YfTRwfj9NE+OH1UBKeP1uH00Rtx+mgbnD4aAKePcvqo1ITm9NEynD76XrgJvcXpo/9T+h56kprQnD6qe7/WlJ/xkJ7QnD5ajtNHIX04Y8osW4lcBL1DOXACPkfQGTh91A+CboAIdbj50zeQg6ARinTQSg/G8Eb5ukgFrfLkPMooXTepoIFackFzrp025RcmmQkGDdSQDJoprUl9OpuJBr2HqO/lZf1lg+b0UR3KLxfdkg3aTHfRZqd8XaSD3sOUHsvbessHzemj9+D00Y44fXQsTh8dgKjH8ByzmdibZHMdna3G65Kv8x7yws2EXjub1kzsMmdr5i1mM6dBm50vNmGnpdbIY8xmTrccW6njXdmKvEn9oHsNeeF2Qq+lLgITO28NvMdsFmRCr+Uexj3D1M79IY4Q8iJc0IuSU+YjxV3ymyhSyIuwQS+ufHyCp8CvbKUihrx4mJlFj3px9bNBlAK/+lggcsRrUwW91vKDb1RPH50l4rVpg15T/lSnUjNGvEbQOzwFPnvAWwSdQSlwAj73WP6BqK9rGTzBXvfx6fnB6aMNEKGOEH/6Bhafg/749Pw4+x8BZUu/TGiE8i5opjQ8WnfLhEYoXwTNlIYn216Z0AhlN2imNDzY6/RwQhM1lB31ebrlIGooOuuSPTRCSQbNlIaSVI9ZE5qooSCnw+wtB1HjTrn9Fe2hiRp3KOmu+EEhUWOk0t6q4uRdLujl6uCsetqOaY0earqqfh6aqNFSbU9NY2QLgqtaDcYu05Wwkav1b/iu2wXCxpFeW9Vh+1/ixojHW/8BHfAm9ON+W9wAAAAASUVORK5CYII=">
+
+<link rel="manifest" href="manifest.json">
+<style>
+  :root{
+    --bg:#f4f4f2; --card:#ffffff; --border:#e2e0da; --text:#1c1c1a;
+    --muted:#75746c; --accent:#0f6e56; --accent-bg:#e1f5ee; --danger:#a32d2d;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; padding:16px; padding-bottom:60px; background:var(--bg); color:var(--text);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+  }
+  h1{font-size:19px; font-weight:600; margin:4px 0 16px; text-align:center;}
+  .summary{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:16px;}
+  .stat{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px; text-align:center;}
+  .stat .label{font-size:12px; color:var(--muted);}
+  .stat .value{font-size:20px; font-weight:600; margin-top:2px;}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px; margin-bottom:14px;}
+  .row{display:flex; align-items:center; gap:8px; margin-bottom:10px;}
+  input[type=text], input[type=number], input[type=tel]{
+    width:100%; padding:9px 10px; border:1px solid var(--border); border-radius:8px;
+    font-size:15px; background:#fff; color:var(--text);
+  }
+  select{
+    padding:4px 2px; border:1px solid var(--border); border-radius:6px; font-size:12px; background:#fff; width:100%;
+  }
+  label{font-size:12px; color:var(--muted); display:block; margin-bottom:4px;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;}
+  button{
+    border:1px solid var(--border); background:#fff; border-radius:8px; padding:10px; font-size:14px;
+    color:var(--text); cursor:pointer;
+  }
+  button:active{transform:scale(0.98);}
+  .icon-btn{width:38px; height:38px; padding:0; flex-shrink:0; color:var(--danger); border-color:#f0d5d5;}
+  .full-btn{width:100%;}
+  .toggle-btn{width:100%; margin-bottom:8px; background:var(--accent-bg); color:var(--accent); border-color:#bfe4d5;}
+  table{width:100%; border-collapse:collapse; table-layout:fixed;}
+  th{background:#f7f7f4; font-size:11px; font-weight:600; padding:6px 2px;}
+  td{padding:4px 2px; text-align:center; font-size:12px; border-top:1px solid var(--border);}
+  input[type=checkbox]{width:18px; height:18px;}
+  .days-wrap{border:1px solid var(--border); border-radius:10px; overflow:hidden; margin-bottom:12px; max-height:340px; overflow-y:auto;}
+  .mini-stats{display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px;}
+  .mini-stat{background:#f7f7f4; border-radius:8px; padding:8px; text-align:center;}
+  .mini-stat .label{font-size:10px;}
+  .mini-stat .value{font-size:14px; font-weight:600; margin-top:2px;}
+  .add-btn{width:100%; padding:13px; background:var(--accent); color:#fff; border:none; font-size:15px; font-weight:600; border-radius:10px;}
+
+  #lockScreen{
+    position:fixed; inset:0; background:var(--bg); z-index:999;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px;
+  }
+  #lockScreen .lock-icon{font-size:40px; margin-bottom:12px;}
+  #lockScreen h2{font-size:17px; margin:0 0 6px;}
+  #lockScreen p{font-size:13px; color:var(--muted); margin:0 0 18px; text-align:center;}
+  #lockScreen input{
+    width:100%; max-width:260px; padding:14px; border:1px solid var(--border); border-radius:10px;
+    font-size:22px; text-align:center; letter-spacing:6px; background:#fff; color:var(--text); margin-bottom:12px;
+  }
+  #lockScreen button{width:100%; max-width:260px; padding:12px; background:var(--accent); color:#fff; border:none; font-size:15px; font-weight:600; border-radius:10px;}
+  #lockError{color:var(--danger); font-size:13px; margin-top:10px; min-height:16px;}
+  #resetPinBtn{background:none; border:none; color:var(--muted); font-size:12px; margin-top:16px; text-decoration:underline; padding:0;}
+  #appContent{display:none;}
+  .role-switch{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;max-width:260px;margin-bottom:10px;}
+  .role-switch button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px;}
+  .role-badge{font-size:11px;padding:6px 9px;border-radius:999px;background:var(--accent-bg);color:var(--accent);}
+  .profile-box{border:1px solid var(--border);border-radius:10px;min-height:90px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#f7f7f4;cursor:pointer;}
+  .profile-box .media-img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:none;}
+  .profile-box.has-image .media-img{display:block;} .profile-box.has-image .media-placeholder{display:none;}
+  .supervisor-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px;}
+  .supervisor-person{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px solid var(--border);}
+  .supervisor-person:first-child{border-top:0;} .present-btn{background:var(--accent);color:#fff;border:0;min-width:95px;} .present-btn.done{background:#ddd;color:#333;}
+
+  .group-card{
+    background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px; margin-bottom:12px;
+    display:flex; align-items:center; justify-content:space-between; gap:8px; cursor:pointer;
+  }
+  .group-card .ginfo{flex:1; min-width:0;}
+  .group-card .gname{font-size:15px; font-weight:600; margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .group-card .gmeta{font-size:12px; color:var(--muted);}
+  .group-card .gremaining{font-size:15px; font-weight:600; color:var(--accent); white-space:nowrap;}
+  .back-row{display:flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .back-btn{padding:8px 12px; font-size:13px;}
+  .group-title{flex:1; font-size:17px; font-weight:600; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  #screenGroups, #screenGroup, #screenReports, #screenReportGroup{display:none;}
+
+  .phoneRow{margin-bottom:10px;}
+  .icon-btn-media{
+    width:38px; height:38px; flex-shrink:0; border:1px solid var(--border); border-radius:8px;
+    background:#fff; display:flex; align-items:center; justify-content:center; font-size:16px;
+    text-decoration:none; color:var(--text); cursor:pointer; padding:0;
+  }
+  .callBtn{color:var(--accent); border-color:#bfe4d5; background:var(--accent-bg);}
+
+  .media-box{
+    position:relative; border:1.5px dashed var(--border); border-radius:10px; height:64px;
+    display:flex; align-items:center; justify-content:center; overflow:hidden; cursor:pointer; background:#fafaf8;
+  }
+  .media-placeholder{display:flex; flex-direction:column; align-items:center; gap:2px; color:var(--muted);}
+  .media-placeholder .micon{font-size:20px;}
+  .media-placeholder span{font-size:10px;}
+  .media-img{width:100%; height:100%; object-fit:cover; display:none;}
+  .media-remove{
+    position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%;
+    background:rgba(0,0,0,0.6); color:#fff; border:none; font-size:11px; line-height:1;
+    padding:0; display:none; align-items:center; justify-content:center;
+  }
+
+  .weekday-select-row{display:flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .weekday-select-row label{margin:0; flex-shrink:0; font-size:13px; color:var(--text);}
+  .weekday-select-row select{flex:1; padding:8px; font-size:13px; border:1px solid var(--border); border-radius:8px; background:#fff;}
+
+  .wd-inline{font-size:9px; color:var(--accent); display:block;}
+
+  .expenses-wrap{border:1px solid var(--border); border-radius:10px; padding:8px; margin-bottom:12px; max-height:300px; overflow-y:auto;}
+  .expenses-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:6px;}
+  .expense-cell{background:#f7f7f4; border-radius:8px; padding:4px 2px; text-align:center;}
+  .expense-cell .day-label{font-size:9px; color:var(--muted); margin-bottom:0;}
+  .expense-cell .weekday-label{font-size:8px; color:var(--accent); margin-bottom:2px; font-weight:600;}
+  .expense-cell input{width:100%; padding:4px 2px; font-size:11px; text-align:center; border:1px solid var(--border); border-radius:6px;}
+  input.readonlyField{background:#f0f0ec; color:var(--muted); cursor:not-allowed;}
+
+  .lightbox{
+    display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:1100;
+    align-items:center; justify-content:center; padding:20px;
+  }
+  .lightbox img{max-width:100%; max-height:100%; border-radius:8px;}
+
+  .history-wrap{border:1px solid var(--border); border-radius:10px; padding:8px; margin-bottom:12px; max-height:220px; overflow-y:auto;}
+  .history-item{background:#f7f7f4; border-radius:8px; padding:8px; margin-bottom:6px;}
+  .history-item:last-child{margin-bottom:0;}
+  .history-date{font-size:11px; font-weight:600; color:var(--text); margin-bottom:3px;}
+  .history-line{font-size:11px; color:var(--muted);}
+
+  .card.settledCard{background:#faf6f0; border-color:#eeddc6;}
+  .status-badge{
+    display:flex; align-items:center; gap:6px; background:#fdf1de; color:#8a5a12;
+    border:1px solid #eeddc6; border-radius:8px; padding:7px 10px; font-size:12px; font-weight:600;
+    margin-bottom:10px;
+  }
+  .status-badge .dot{width:8px; height:8px; border-radius:50%; background:#c98a1f; flex-shrink:0;}
+  .resumeBtn{background:var(--accent); color:#fff; border:none;}
+  .settleBtn{background:#fdece9; color:var(--danger); border-color:#f0c9c2;}
+  .lockedField{background:#f0f0ec !important; color:var(--muted) !important;}
+
+  .report-group-card{
+    background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px; margin-bottom:12px;
+    display:flex; align-items:center; justify-content:space-between; gap:8px; cursor:pointer;
+  }
+  .report-group-card .gname{font-size:15px; font-weight:600;}
+  .report-group-card .gmeta{font-size:12px; color:var(--muted); margin-top:4px;}
+  .report-entry{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px; margin-bottom:10px;}
+  .report-entry .rname{font-size:14px; font-weight:600; margin-bottom:4px;}
+  .report-entry .rdate{font-size:11px; color:var(--muted); margin-bottom:8px;}
+  .report-entry .rstats{display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px;}
+  .report-entry .rstat{background:#f7f7f4; border-radius:8px; padding:6px; text-align:center;}
+  .report-entry .rstat .rlabel{font-size:10px; color:var(--muted);}
+  .report-entry .rstat .rvalue{font-size:13px; font-weight:600; margin-top:2px;}
+  .pending-tag{display:inline-block; background:#fdf1de; color:#8a5a12; font-size:10px; font-weight:600; border-radius:6px; padding:2px 6px; margin-inline-start:6px;}
+  .empty-note{color:var(--muted); font-size:13px; text-align:center; padding:30px 10px;}
+
+  .full-report-summary{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:16px;}
+  .full-report-wrap{overflow-x:auto; border:1px solid var(--border); border-radius:10px; margin-bottom:12px; -webkit-overflow-scrolling:touch;}
+  .full-report-table{width:100%; border-collapse:collapse; min-width:680px;}
+  .full-report-table th{background:#f7f7f4; font-size:11px; font-weight:600; padding:8px 6px; white-space:nowrap; position:sticky; top:0;}
+  .full-report-table td{padding:7px 6px; text-align:center; font-size:12px; border-top:1px solid var(--border); white-space:nowrap;}
+  .full-report-table tbody tr:nth-child(even){background:#fafaf8;}
+  .full-report-table tfoot td{font-weight:700; background:#f0f0ec; border-top:2px solid var(--border);}
+  .full-report-table td.frName{text-align:right; font-weight:600;}
+  .full-report-table td.frGroup{text-align:right; color:var(--muted);}
+
+  .code-day-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:6px;}
+  .code-day-cell{background:#ffffff; border:1px solid var(--border); border-radius:8px; padding:6px 3px; text-align:center; min-height:54px;}
+  .code-day-cell .day-label{font-size:12px; color:var(--muted); font-weight:600;}
+  .code-day-cell .group-label{font-size:12px; color:var(--text); font-weight:600; margin-top:4px; word-break:break-word; line-height:1.3;}
+  .code-day-cell .group-label.empty{color:var(--muted); font-weight:400;}
+
+  .mini-stat.remainingStat{position:relative;}
+  .settleCheck{
+    position:absolute; top:5px; left:5px; width:18px; height:18px; border-radius:50%;
+    border:1.5px solid #c7c5bc; background:#fff; padding:0; font-size:0; line-height:1;
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+  }
+  .settleCheck::after{content:'✓'; font-size:11px; color:transparent; line-height:1;}
+  .settleCheck.checked{background:#fff; border-color:#1c1c1a;}
+  .settleCheck.checked::after{color:#1c1c1a;}
+
+  #dailyAttendanceWrap{
+    border:1px solid var(--border); border-radius:10px; padding:8px; margin-bottom:12px;
+    max-height:320px; overflow-y:auto; display:none;
+  }
+  .attendance-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:6px;}
+  .attendance-cell{background:#f7f7f4; border-radius:8px; padding:6px 2px; text-align:center;}
+  .attendance-cell .day-label{font-size:9px; color:var(--muted);}
+  .attendance-cell .weekday-label{font-size:8px; color:var(--accent); font-weight:600; margin-bottom:2px;}
+  .attendance-cell .attendance-count{font-size:14px; font-weight:700; color:var(--text); margin-top:1px;}
+
+  .modal-overlay{position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:1300; align-items:center; justify-content:center; padding:20px;}
+  .modal-box{background:#fff; border-radius:14px; padding:18px; width:100%; max-width:320px; box-shadow:0 10px 30px rgba(0,0,0,0.25);}
+  .modal-message{font-size:14px; color:var(--text); margin-bottom:14px; line-height:1.6; white-space:pre-line;}
+  #modalInput{width:100%; padding:10px; border:1px solid var(--border); border-radius:8px; font-size:15px; margin-bottom:14px; background:#fff; color:var(--text);}
+  .modal-actions{display:flex; gap:8px;}
+  .modal-actions button{flex:1; padding:11px; border-radius:8px; font-size:14px; border:1px solid var(--border); background:#fff; color:var(--text); cursor:pointer;}
+  .modal-actions button.primary{background:var(--accent); color:#fff; border:none;}
+
+  .faceStatusTag{font-size:12px; padding:9px 0; text-align:center; border:1px solid var(--border); border-radius:8px; color:var(--muted);}
+  .faceStatusTag.registered{color:var(--accent); border-color:#bfe4d5; background:var(--accent-bg); font-weight:600;}
+  #faceVideo{width:100%; border-radius:10px; background:#000; margin-bottom:10px; max-height:280px; object-fit:cover;}
+  #faceStatus{font-size:12px; color:var(--muted); margin-bottom:10px; min-height:16px; text-align:center;}
+  .modal-actions.chooser-list{flex-direction:column;}
+  .modal-actions.chooser-list button{margin-bottom:6px;}
+</style>
+<style>@supports(padding:max(0px)){body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}}</style>
+</head>
+<body>
+
+<div id="lockScreen">
+  <div class="lock-icon">🔐</div>
+  <h2 id="lockTitle">دخول المدير</h2>
+  <p id="lockSubtitle">أدخل رمز المدير المكون من 4 أرقام</p>
+  <div class="role-switch"><button type="button" id="adminRoleBtn" class="active">👑 المدير</button><button type="button" id="supervisorRoleBtn">👷 المشرف</button></div>
+  <input type="tel" id="supPhone" placeholder="رقم الموبايل" autocomplete="off" style="display:none;margin-bottom:8px"><input type="password" id="supPass" placeholder="الباسورد" autocomplete="off" style="display:none;margin-bottom:8px"><input type="password" id="pinInput" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off">
+  <button id="pinSubmit">دخول</button><div id="lockError"></div><button id="resetPinBtn" style="display:none;">نسيت الرمز؟ (سيتم حذف كل البيانات)</button>
+</div>
+
+<div id="appContent">
+  <div class="topbar"><span class="role-badge" id="roleBadge">👑 المدير</span><button type="button" id="logoutBtn">خروج</button></div>
+  <div id="supervisorContent" style="display:none;"></div>
+
+  <div id="screenGroups">
+    <h1>المجموعات</h1>
+    <div class="summary">
+      <div class="stat"><div class="label">إجمالي كل المجموعات</div><div class="value" id="allGroupsSalary">0</div></div>
+      <div class="stat"><div class="label">المتبقي في كل المجموعات</div><div class="value" id="allGroupsRemaining">0</div></div>
+    </div>
+    <button class="toggle-btn full-btn" id="openReportsBtn" style="margin-bottom:8px;">📄 عرض تقارير التصفيات</button>
+    <button class="toggle-btn full-btn" id="supervisorSettingsBtn" style="margin-bottom:12px;">⚙️ إعدادات المشرف</button>
+    <button class="toggle-btn full-btn" id="openFullReportBtn" style="margin-bottom:12px;">📊 التقرير الشامل لكل الأشخاص</button>
+    <div id="groupsContainer"></div>
+    <button class="add-btn" id="addGroupBtn">+ إضافة مجموعة جديدة</button>
+  </div>
+
+  <div id="screenGroup">
+    <div class="back-row">
+      <button class="back-btn" id="backToGroupsBtn">‹ رجوع</button>
+      <div class="group-title" id="groupTitle"></div>
+      <button class="icon-btn" id="renameGroupBtn" aria-label="إعادة تسمية" style="color:var(--muted); border-color:var(--border);">✎</button>
+    </div>
+
+    <div class="summary">
+      <div class="stat"><div class="label">إجمالي الرواتب</div><div class="value" id="grandSalary">0</div></div>
+      <div class="stat"><div class="label">إجمالي المتبقي</div><div class="value" id="grandRemaining">0</div></div>
+    </div>
+
+    <div class="weekday-select-row">
+      <label>يوم 1 في الشهر يوافق:</label>
+      <select id="weekdayStartSelect"></select>
+    </div>
+
+    <button class="toggle-btn full-btn" id="faceAttendanceBtn">📷 تسجيل حضور ببصمة الوجه</button>
+    <button class="toggle-btn full-btn" id="toggleDailyAttendance">عرض عدد الحاضرين كل يوم</button>
+    <div id="dailyAttendanceWrap"></div>
+
+    <div id="peopleContainer"></div>
+
+    <button class="add-btn" id="addPersonBtn">+ إضافة شخص</button>
+  </div>
+
+  <div id="screenReports">
+    <div class="back-row">
+      <button class="back-btn" id="backFromReportsBtn">‹ رجوع</button>
+      <div class="group-title">التقارير</div>
+      <div style="width:38px;"></div>
+    </div>
+    <div id="reportsGroupsContainer"></div>
+  </div>
+
+  <div id="screenReportGroup">
+    <div class="back-row">
+      <button class="back-btn" id="backToReportsBtn">‹ رجوع</button>
+      <div class="group-title" id="reportGroupTitle"></div>
+      <div style="width:38px;"></div>
+    </div>
+    <div id="reportEntriesContainer"></div>
+  </div>
+
+  <div id="screenFullReport">
+    <div class="back-row">
+      <button class="back-btn" id="backFromFullReportBtn">‹ رجوع</button>
+      <div class="group-title">التقرير الشامل</div>
+      <div style="width:38px;"></div>
+    </div>
+
+    <div class="full-report-summary">
+      <div class="stat"><div class="label">إجمالي أيام العمل</div><div class="value" id="frTotalDays">0</div></div>
+      <div class="stat"><div class="label">إجمالي الرواتب</div><div class="value" id="frTotalSalary">0</div></div>
+      <div class="stat"><div class="label">إجمالي المصاريف</div><div class="value" id="frTotalExpenses">0</div></div>
+      <div class="stat"><div class="label">إجمالي المتبقي</div><div class="value" id="frTotalRemaining">0</div></div>
+    </div>
+
+    <div class="card">
+      <label>دور باسم الشخص</label>
+      <div class="row" style="margin-bottom:0;">
+        <input type="text" id="codeSearchInput" placeholder="اكتب اسم الشخص">
+        <button type="button" id="codeSearchBtn" style="flex-shrink:0;">بحث</button>
+      </div>
+      <div id="codeSearchResult" style="margin-top:12px; display:none;">
+        <div id="csName" style="font-size:13px; font-weight:600; margin-bottom:10px; text-align:right;"></div>
+        <div class="mini-stats" style="grid-template-columns:1fr 1fr 1fr 1fr; margin-bottom:12px;">
+          <div class="mini-stat"><div class="label">الأيام</div><div class="value" id="csDays">0</div></div>
+          <div class="mini-stat"><div class="label">الراتب</div><div class="value" id="csSalary">0</div></div>
+          <div class="mini-stat"><div class="label">المصاريف</div><div class="value" id="csExpenses">0</div></div>
+          <div class="mini-stat"><div class="label">المتبقي</div><div class="value" id="csRemaining">0</div></div>
+        </div>
+        <div class="code-day-grid" id="csDayGrid"></div>
+      </div>
+      <div id="codeSearchEmpty" class="empty-note" style="display:none;">مفيش حد بالاسم ده</div>
+    </div>
+
+    <div id="fullReportEmpty" class="empty-note" style="display:none;">لسه محدش مسجل في أي مجموعة</div>
+
+    <div id="fullReportTableWrap" class="full-report-wrap" style="display:none;">
+      <table class="full-report-table">
+        <thead>
+          <tr>
+            <th>المجموعة</th>
+            <th>الاسم</th>
+            <th>أيام الحضور</th>
+            <th>أوفر تايم</th>
+            <th>إجمالي الأيام</th>
+            <th>الراتب</th>
+            <th>المصاريف</th>
+            <th>المتبقي ليه</th>
+          </tr>
+        </thead>
+        <tbody id="fullReportBody"></tbody>
+      </table>
+    </div>
+
+    <div id="perPersonSection" style="display:none;">
+      <h1 style="font-size:15px; margin:18px 0 10px; text-align:right;">إجمالي كل شخص في كل المجموعات المسجل فيها</h1>
+      <div class="full-report-wrap">
+        <table class="full-report-table">
+          <thead>
+            <tr>
+              <th>الاسم</th>
+              <th>المجموعات</th>
+              <th>إجمالي الأيام</th>
+              <th>إجمالي الراتب</th>
+              <th>إجمالي المصاريف</th>
+              <th>إجمالي المتبقي</th>
+            </tr>
+          </thead>
+          <tbody id="perPersonBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="imgLightbox" class="lightbox">
+  <img id="lightboxImg" alt="">
+</div>
+
+<div id="appModal" class="modal-overlay" style="display:none;">
+  <div class="modal-box">
+    <div class="modal-message" id="modalMessage"></div>
+    <input type="text" id="modalInput" style="display:none;">
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+
+<div id="faceModal" class="modal-overlay" style="display:none;">
+  <div class="modal-box" style="max-width:340px;">
+    <div class="modal-message" id="faceModalTitle">التقط صورة للوجه</div>
+    <video id="faceVideo" autoplay playsinline muted></video>
+    <canvas id="faceCanvas" style="display:none;"></canvas>
+    <div id="faceStatus"></div>
+    <div class="modal-actions">
+      <button type="button" id="faceCancelBtn">إلغاء</button>
+      <button type="button" id="faceCaptureBtn" class="primary">التقط</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+
+<script>
+/* باسورد الأدمن القوي: PBKDF2 + salt بدل رمز الـ 4 أرقام النصي */
+window.AdminPw=(function(){
+  const KEY='salaryAppAdminPw', ITER=150000, enc=new TextEncoder();
+  const b64=a=>btoa(String.fromCharCode(...new Uint8Array(a)));
+  const unb64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+  async function derive(pw,salt,iter){
+    const k=await crypto.subtle.importKey('raw',enc.encode(pw),'PBKDF2',false,['deriveBits']);
+    return b64(await crypto.subtle.deriveBits({name:'PBKDF2',hash:'SHA-256',salt:salt,iterations:iter},k,256));
+  }
+  const COMMON=['password','passw0rd','qwerty','abc123','letmein','welcome','admin','iloveyou','12345678','123456789','1234567890','0123456789','salary','مرحبا'];
+  function strength(pw){
+    pw=String(pw||''); const miss=[];
+    const cls=[/[a-z]/,/[A-Z]/,/\d/,/[^A-Za-z0-9]/].filter(r=>r.test(pw)).length;
+    const low=pw.toLowerCase();
+    if(pw.length<10) miss.push('10 أحرف على الأقل');
+    if(cls<3) miss.push('خلّيه فيه 3 أنواع على الأقل من: حروف صغيرة، حروف كبيرة، أرقام، رموز');
+    if(new Set(pw).size<5) miss.push('حروف متكررة كتير');
+    if(/(.)\1{3,}/.test(pw)||/(0123|1234|2345|3456|4567|5678|6789|abcd|bcde|qwer|asdf)/i.test(pw)) miss.push('تجنّب التكرار والتسلسل (1234، abcd)');
+    if(COMMON.some(c=>low.includes(c))) miss.push('الباسورد ده شائع ومتوقع');
+    const ok=miss.length===0;
+    let score=0; if(pw.length>=10) score++; if(cls>=3) score++; if(pw.length>=14) score++; if(cls===4&&pw.length>=12) score++;
+    if(!ok) score=Math.min(score,1);
+    return {ok:ok,score:score,miss:miss};
+  }
+  function generate(n){
+    n=n||16; const sets=['abcdefghijkmnpqrstuvwxyz','ABCDEFGHJKLMNPQRSTUVWXYZ','23456789','!@#$%^&*-_=+?'];
+    const all=sets.join(''), rnd=m=>{const a=new Uint32Array(1); let x; do{crypto.getRandomValues(a); x=a[0];}while(x>=4294967296-(4294967296%m)); return x%m;};
+    const out=sets.map(s=>s[rnd(s.length)]); while(out.length<n) out.push(all[rnd(all.length)]);
+    for(let i=out.length-1;i>0;i--){const j=rnd(i+1); [out[i],out[j]]=[out[j],out[i]];}
+    return out.join('');
+  }
+  const has=()=>{try{return !!localStorage.getItem(KEY);}catch(e){return false;}};
+  async function set(pw){
+    const salt=crypto.getRandomValues(new Uint8Array(16));
+    localStorage.setItem(KEY,JSON.stringify({v:2,iter:ITER,salt:b64(salt),hash:await derive(pw,salt,ITER)}));
+    localStorage.removeItem('salaryAppPin');
+  }
+  async function verify(pw){
+    let r=null; try{r=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){}
+    if(r) return (await derive(pw,unb64(r.salt),r.iter))===r.hash;
+    const old=localStorage.getItem('salaryAppPin'); return !!old&&pw===old;      // رمز قديم من 4 أرقام
+  }
+  return {KEY:KEY,strength:strength,generate:generate,has:has,set:set,verify:verify};
+})();
+</script>
+<script>
+(function(){
+  const lockScreen = document.getElementById('lockScreen');
+  const appContent = document.getElementById('appContent');
+  const pinInput = document.getElementById('pinInput');
+  const pinSubmit = document.getElementById('pinSubmit');
+  const lockError = document.getElementById('lockError');
+  const lockTitle = document.getElementById('lockTitle');
+  const lockSubtitle = document.getElementById('lockSubtitle');
+  const resetPinBtn = document.getElementById('resetPinBtn');
+  const adminRoleBtn = document.getElementById('adminRoleBtn');
+  const supervisorRoleBtn = document.getElementById('supervisorRoleBtn');
+  let loginRole = 'admin';
+
+  const hasAuth = ()=> AdminPw.has() || !!localStorage.getItem('salaryAppPin');
+  let mode = hasAuth() ? 'enter' : 'setup';
+  let failN = 0, lockUntil = 0;
+  const pwMode = ()=> mode==='setup' || AdminPw.has();   // false = رمز قديم من 4 أرقام
+  if(!localStorage.getItem('salaryAppSupervisorPin')) localStorage.setItem('salaryAppSupervisorPin','');
+  let firstPinEntry = null;
+
+  function setupUI(){
+    if(loginRole === 'supervisor'){
+      lockTitle.textContent='دخول المشرف'; lockSubtitle.textContent='أدخل رقم الموبايل والباسورد'; resetPinBtn.style.display='none';
+    } else if(mode === 'setup'){
+      lockTitle.textContent = firstPinEntry ? 'أكّد الباسورد' : 'اختار باسورد قوي';
+      lockSubtitle.textContent = 'على الأقل 10 أحرف، فيها حروف وأرقام ورموز';
+      resetPinBtn.style.display = 'none';
+    } else {
+      lockTitle.textContent = AdminPw.has() ? 'أدخل الباسورد' : 'أدخل الرمز السري';
+      lockSubtitle.textContent = 'التطبيق خاص بيك';
+      resetPinBtn.style.display = 'block';
+    }
+    pinInput.value = '';
+    lockError.textContent = '';
+    if(pwMode()){ pinInput.type='password'; pinInput.inputMode='text'; pinInput.maxLength=128; pinInput.placeholder='الباسورد'; pinInput.dataset.mode='pw'; }
+    else { pinInput.type='password'; pinInput.inputMode='numeric'; pinInput.maxLength=4; pinInput.placeholder='••••'; pinInput.dataset.mode='pin'; }
+    const _sv = loginRole==='supervisor';
+    document.getElementById('supPhone').style.display = _sv?'block':'none';
+    document.getElementById('supPass').style.display = _sv?'block':'none';
+    pinInput.style.display = _sv?'none':'';
+    (_sv?document.getElementById('supPhone'):pinInput).focus();
+    if(window.SALARY_CLOUD_WANTED && window.cloudSetupUI) window.cloudSetupUI(loginRole);
+  }
+  adminRoleBtn.addEventListener('click',()=>{loginRole='admin';adminRoleBtn.classList.add('active');supervisorRoleBtn.classList.remove('active');mode=hasAuth()?'enter':'setup';setupUI();});
+  supervisorRoleBtn.addEventListener('click',()=>{loginRole='supervisor';supervisorRoleBtn.classList.add('active');adminRoleBtn.classList.remove('active');mode='enter';setupUI();});
+
+  function unlock(){
+    lockScreen.style.display = 'none';
+    appContent.style.display = 'block';
+    initApp();
+    if(window.viewSession && typeof initViewerMode==='function') initViewerMode();
+    else if(loginRole==='supervisor' && typeof initSupervisorMode==='function') initSupervisorMode();
+  }
+
+  async function handleSubmit(){
+    if(window.SALARY_CLOUD_WANTED && window.cloudHandleLogin){
+      const ok = await window.cloudHandleLogin(loginRole);
+      if(ok) unlock();
+      return;
+    }
+    if(loginRole==='supervisor'){
+      const ok = await window.supervisorLogin(document.getElementById('supPhone').value, document.getElementById('supPass').value);
+      if(ok) unlock(); else { lockError.textContent='رقم الموبايل أو الباسورد غلط'; document.getElementById('supPass').value=''; }
+      return;
+    }
+    const val = pinInput.value;
+    if(mode === 'setup'){
+      const st = AdminPw.strength(val);
+      if(!st.ok){ lockError.textContent = 'الباسورد ضعيف: ' + st.miss[0]; return; }
+      if(!firstPinEntry){
+        firstPinEntry = val;
+        setupUI();
+      } else if(firstPinEntry === val){
+        await AdminPw.set(val);
+        firstPinEntry = null;
+        unlock();
+      } else {
+        firstPinEntry = null;
+        setupUI();
+        lockError.textContent = 'الباسورد مش متطابق، حاول تاني';
+      }
+    } else {
+      if(Date.now() < lockUntil){ lockError.textContent = 'محاولات كتير غلط. استنى ' + Math.ceil((lockUntil-Date.now())/1000) + ' ثانية'; return; }
+      if(val && await AdminPw.verify(val)){
+        failN = 0; unlock();
+        if(!AdminPw.has() && typeof window.openAdminPassword==='function'){
+          setTimeout(async()=>{ if(await showConfirm('الرمز الحالي (4 أرقام) ضعيف. تغيّره لباسورد قوي دلوقتي؟')) window.openAdminPassword(); }, 600);
+        }
+      } else {
+        failN++; if(failN>=5){ lockUntil = Date.now()+30000; failN = 0; }
+        lockError.textContent = AdminPw.has() ? 'الباسورد غلط' : 'الرمز غلط'; pinInput.value=''; pinInput.focus();
+      }
+    }
+  }
+
+  pinSubmit.addEventListener('click', handleSubmit);
+  pinInput.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') handleSubmit(); });
+  pinInput.addEventListener('input', ()=>{ if(pinInput.dataset.mode==='pin') pinInput.value = pinInput.value.replace(/\D/g,'').slice(0,4); });
+
+  resetPinBtn.addEventListener('click', async ()=>{
+    const ok = await showConfirm('هيتم حذف الرمز وكل بيانات المجموعات المحفوظة. متأكد؟');
+    if(ok){
+      localStorage.removeItem('salaryAppPin'); localStorage.removeItem(AdminPw.KEY);
+      localStorage.removeItem('salaryAppGroups');
+      localStorage.removeItem('salaryAppData'); localStorage.removeItem('salaryAppSupervisorPin');
+      location.reload();
+    }
+  });
+
+  setupUI();
+})();
+
+const lightbox = document.getElementById('imgLightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+function openLightbox(src){
+  lightboxImg.src = src;
+  lightbox.style.display = 'flex';
+}
+lightbox.addEventListener('click', ()=>{ lightbox.style.display = 'none'; lightboxImg.src=''; });
+
+const appModal = document.getElementById('appModal');
+const modalMessage = document.getElementById('modalMessage');
+const modalInput = document.getElementById('modalInput');
+const modalActions = document.getElementById('modalActions');
+
+function closeModal(){
+  appModal.style.display = 'none';
+  modalActions.classList.remove('chooser-list');
+}
+
+function showConfirm(message){
+  return new Promise((resolve)=>{
+    modalMessage.textContent = message;
+    modalInput.style.display = 'none';
+    modalActions.innerHTML = '';
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.textContent = 'إلغاء';
+    const okBtn = document.createElement('button');
+    okBtn.type = 'button';
+    okBtn.className = 'primary';
+    okBtn.textContent = 'تأكيد';
+
+    cancelBtn.addEventListener('click', ()=>{ closeModal(); resolve(false); });
+    okBtn.addEventListener('click', ()=>{ closeModal(); resolve(true); });
+
+    modalActions.appendChild(cancelBtn);
+    modalActions.appendChild(okBtn);
+    appModal.style.display = 'flex';
+  });
+}
+
+function showPrompt(message, defaultValue){
+  return new Promise((resolve)=>{
+    modalMessage.textContent = message;
+    modalInput.style.display = 'block';
+    modalInput.value = defaultValue || '';
+    modalActions.innerHTML = '';
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.textContent = 'إلغاء';
+    const okBtn = document.createElement('button');
+    okBtn.type = 'button';
+    okBtn.className = 'primary';
+    okBtn.textContent = 'حفظ';
+
+    function submit(){ closeModal(); resolve(modalInput.value); }
+
+    cancelBtn.addEventListener('click', ()=>{ closeModal(); resolve(null); });
+    okBtn.addEventListener('click', submit);
+    modalInput.onkeydown = (e)=>{ if(e.key === 'Enter') submit(); };
+
+    modalActions.appendChild(cancelBtn);
+    modalActions.appendChild(okBtn);
+    appModal.style.display = 'flex';
+    setTimeout(()=>{ modalInput.focus(); modalInput.select(); }, 50);
+  });
+}
+
+function showChooser(message, options){
+  return new Promise((resolve)=>{
+    modalMessage.textContent = message;
+    modalInput.style.display = 'none';
+    modalActions.innerHTML = '';
+    modalActions.classList.add('chooser-list');
+
+    options.forEach(opt=>{
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = opt.label;
+      b.addEventListener('click', ()=>{ closeModal(); resolve(opt.value); });
+      modalActions.appendChild(b);
+    });
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.textContent = 'إلغاء';
+    cancelBtn.addEventListener('click', ()=>{ closeModal(); resolve(null); });
+    modalActions.appendChild(cancelBtn);
+
+    appModal.style.display = 'flex';
+  });
+}
+
+function resizeImageToBase64(file, maxDim, quality){
+  maxDim = maxDim || 1000;
+  quality = quality || 0.72;
+  return new Promise((resolve, reject)=>{
+    const reader = new FileReader();
+    reader.onload = function(e){
+      const img = new Image();
+      img.onload = function(){
+        let w = img.width, h = img.height;
+        if(w > maxDim || h > maxDim){
+          if(w > h){ h = Math.round(h * maxDim / w); w = maxDim; }
+          else{ w = Math.round(w * maxDim / h); h = maxDim; }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL('image/jpeg', quality));
+      };
+      img.onerror = reject;
+      img.src = e.target.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+/* ---------- Face recognition (attendance by face) ---------- */
+const FACE_MODEL_URL = 'https://cdn.jsdelivr.net/gh/justadudewhohacks/face-api.js@master/weights';
+let faceModelsPromise = null;
+function ensureFaceModelsLoaded(){
+  if(typeof faceapi === 'undefined'){
+    return Promise.reject(new Error('face-api not loaded'));
+  }
+  if(!faceModelsPromise){
+    faceModelsPromise = Promise.all([
+      faceapi.nets.tinyFaceDetector.loadFromUri(FACE_MODEL_URL),
+      faceapi.nets.faceLandmark68Net.loadFromUri(FACE_MODEL_URL),
+      faceapi.nets.faceRecognitionNet.loadFromUri(FACE_MODEL_URL)
+    ]);
+  }
+  return faceModelsPromise;
+}
+
+const faceModal = document.getElementById('faceModal');
+const faceVideo = document.getElementById('faceVideo');
+const faceStatus = document.getElementById('faceStatus');
+const faceModalTitle = document.getElementById('faceModalTitle');
+const faceCaptureBtn = document.getElementById('faceCaptureBtn');
+const faceCancelBtn = document.getElementById('faceCancelBtn');
+
+let faceStream = null;
+let faceMode = null;
+let faceRegisterPersonIdx = null;
+let faceRegisterBuffer = [];
+
+function openFaceCapture(mode, personIdx){
+  faceMode = mode;
+  faceRegisterPersonIdx = personIdx;
+  if(mode === 'register') faceRegisterBuffer = [];
+  faceCaptureBtn.disabled = false;
+  faceCaptureBtn.textContent = mode === 'register' ? 'التقط (1/3)' : 'التقط';
+  faceModalTitle.textContent = mode === 'register'
+    ? 'التقط 3 صور واضحة للوجه من زوايا شوية مختلفة'
+    : 'وجّه الكاميرا على وشك وسجل حضورك';
+  faceStatus.textContent = 'جاري تجهيز الكاميرا...';
+  faceModal.style.display = 'flex';
+
+  navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } }).then(stream=>{
+    faceStream = stream;
+    faceVideo.srcObject = stream;
+    faceStatus.textContent = '';
+  }).catch(()=>{
+    faceStatus.textContent = 'تعذر فتح الكاميرا، تأكد إن التطبيق عنده إذن الوصول للكاميرا';
+  });
+
+  ensureFaceModelsLoaded().catch(()=>{
+    faceStatus.textContent = 'محتاج اتصال بالنت أول مرة عشان يحمّل بيانات التعرف على الوجه';
+  });
+}
+
+function closeFaceCapture(){
+  faceModal.style.display = 'none';
+  if(faceStream){
+    faceStream.getTracks().forEach(t=> t.stop());
+    faceStream = null;
+  }
+  faceRegisterBuffer = [];
+}
+
+faceCancelBtn.addEventListener('click', closeFaceCapture);
+
+function euclideanDistance(a, b){
+  let sum = 0;
+  for(let i=0;i<a.length;i++){ const d = a[i]-b[i]; sum += d*d; }
+  return Math.sqrt(sum);
+}
+
+function updateFaceTag(card, hasFace){
+  const tag = card.querySelector('.faceStatusTag');
+  if(!tag) return;
+  if(hasFace){
+    tag.textContent = 'مسجلة ✓';
+    tag.classList.add('registered');
+  } else {
+    tag.textContent = 'غير مسجلة';
+    tag.classList.remove('registered');
+  }
+}
+
+async function manualFaceFallback(){
+  const g = currentGroup();
+  if(!g) return;
+  const activePeople = (g.people||[]).map((p, idx)=> ({p, idx})).filter(x=> x.p.status !== 'settled');
+  if(activePeople.length === 0) return;
+  const options = activePeople.map(x=> ({ label: x.p.name || 'شخص بدون اسم', value: x.idx }));
+  const chosen = await showChooser('معرفش أحدد الشخص بدقة، اختاره يدوي من القائمة:', options);
+  if(chosen !== null) markPersonPresentToday(chosen);
+}
+
+function markPersonPresentToday(personIdx){
+  const g = currentGroup();
+  if(!g) return;
+  const p = g.people[personIdx];
+  if(!p) return;
+  if(p.status === 'settled'){
+    showConfirm('الحساب ده متصفي، مينفعش يتسجل عليه حضور دلوقتي.');
+    return;
+  }
+  const dayIdx = new Date().getDate() - 1;
+  if(!p.days) p.days = [];
+  p.days[dayIdx] = true;
+  saveGroups();
+  if(currentGroupId === g.id) renderPeople();
+  showConfirm('تم تسجيل حضور "'+(p.name||'الشخص ده')+'" لليوم '+(dayIdx+1)+' ✓');
+}
+
+async function handleFaceCheckinMatch(descriptor){
+  const g = currentGroup();
+  if(!g) return;
+  let best = null, bestDist = Infinity;
+  (g.people||[]).forEach((p, idx)=>{
+    if(p.status === 'settled') return;
+    if(!p.faceDescriptor) return;
+    const dist = euclideanDistance(descriptor, p.faceDescriptor);
+    if(dist < bestDist){ bestDist = dist; best = { p, idx }; }
+  });
+  const THRESHOLD = 0.55;
+  if(best && bestDist < THRESHOLD){
+    const ok = await showConfirm('ده "'+(best.p.name || 'بدون اسم')+'"؟ هيتسجل حاضر النهاردة.');
+    if(ok) markPersonPresentToday(best.idx);
+    else await manualFaceFallback();
+  } else {
+    await manualFaceFallback();
+  }
+}
+
+faceCaptureBtn.addEventListener('click', async ()=>{
+  if(typeof faceapi === 'undefined'){
+    faceStatus.textContent = 'محتاج اتصال بالنت أول مرة عشان تشتغل ميزة بصمة الوجه';
+    return;
+  }
+  faceCaptureBtn.disabled = true;
+  faceStatus.textContent = 'جاري التحليل...';
+  try{
+    await ensureFaceModelsLoaded();
+    const detection = await faceapi.detectSingleFace(faceVideo, new faceapi.TinyFaceDetectorOptions())
+      .withFaceLandmarks().withFaceDescriptor();
+    if(!detection){
+      faceStatus.textContent = 'مفيش وش واضح في الكاميرا، حاول تاني بإضاءة أحسن';
+      faceCaptureBtn.disabled = false;
+      return;
+    }
+    const descriptor = Array.from(detection.descriptor);
+
+    if(faceMode === 'register'){
+      faceRegisterBuffer.push(descriptor);
+      if(faceRegisterBuffer.length < 3){
+        faceStatus.textContent = 'تمام، حرّك وشك شوية والتقط تاني';
+        faceCaptureBtn.textContent = 'التقط ('+(faceRegisterBuffer.length+1)+'/3)';
+        faceCaptureBtn.disabled = false;
+      } else {
+        const avg = new Array(descriptor.length).fill(0);
+        faceRegisterBuffer.forEach(d=> d.forEach((v,i)=> avg[i]+=v));
+        for(let i=0;i<avg.length;i++) avg[i] /= faceRegisterBuffer.length;
+        const g = currentGroup();
+        if(g && g.people[faceRegisterPersonIdx]){
+          g.people[faceRegisterPersonIdx].faceDescriptor = avg;
+          saveGroups();
+        }
+        closeFaceCapture();
+        renderPeople();
+      }
+    } else if(faceMode === 'checkin'){
+      closeFaceCapture();
+      handleFaceCheckinMatch(descriptor);
+    }
+  }catch(e){
+    faceStatus.textContent = 'حصل خطأ أثناء التحليل، حاول تاني';
+    faceCaptureBtn.disabled = false;
+  }
+});
+
+document.getElementById('faceAttendanceBtn').addEventListener('click', ()=>{
+  openFaceCapture('checkin', null);
+});
+
+const otOptions = [
+  {v:'0', t:'-'},
+  {v:'0.5', t:'نص يوم'},
+  {v:'1', t:'يوم'},
+  {v:'1.5', t:'يوم ونص'},
+  {v:'2', t:'يومين'}
+];
+
+const weekdayNames = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+const weekdayShort = ['أحد','اثن','ثلا','أرب','خمي','جمع','سبت'];
+
+function defaultStartWeekday(){
+  const d = new Date();
+  return new Date(d.getFullYear(), d.getMonth(), 1).getDay();
+}
+
+let groups = [];
+let currentGroupId = null;
+
+function fmt(n){ return Math.round(n*100)/100; }
+function fmtMoney(n){ return Math.round(n).toLocaleString('ar-EG'); }
+function uid(){ return 'g' + Date.now() + Math.floor(Math.random()*1000); }
+
+function setDayBtnState(btn, present){
+  btn.dataset.present = present ? '1' : '0';
+  btn.textContent = present ? '✓' : '✗';
+  btn.classList.toggle('present', present);
+}
+
+function calcPerson(p){
+  let attended = 0, overtimeTotal = 0;
+  (p.days||[]).forEach(d=>{ if(d) attended++; });
+  (p.overtime||[]).forEach(o=>{ overtimeTotal += parseFloat(o) || 0; });
+  const total = attended + overtimeTotal;
+  const rate = parseFloat(p.rate) || 0;
+  const exp = parseFloat(p.expenses) || 0;
+  const salary = total * rate;
+  const remaining = salary - exp;
+  return {total, salary, remaining};
+}
+
+function calcGroup(g){
+  let salary = 0, remaining = 0;
+  (g.people||[]).forEach(p=>{
+    const c = calcPerson(p);
+    salary += c.salary;
+    remaining += c.remaining;
+  });
+  return {salary, remaining};
+}
+
+function saveGroups(){
+  try{ localStorage.setItem('salaryAppGroups', JSON.stringify(groups)); }
+  catch(e){ alert('تعذر الحفظ، الصور المخزنة كبيرة جدًا على مساحة المتصفح. جرب تحذف بعض الصور القديمة.'); }
+}
+
+function loadGroups(){
+  try{
+    const raw = localStorage.getItem('salaryAppGroups');
+    if(raw){
+      groups = JSON.parse(raw);
+      return;
+    }
+  }catch(e){}
+  try{
+    const oldRaw = localStorage.getItem('salaryAppData');
+    if(oldRaw){
+      const oldPeople = JSON.parse(oldRaw);
+      if(oldPeople && oldPeople.length){
+        groups = [{ id: uid(), name: 'المجموعة الأولى', people: oldPeople }];
+        saveGroups();
+        return;
+      }
+    }
+  }catch(e){}
+  groups = [];
+}
+
+const screenGroups = document.getElementById('screenGroups');
+const screenGroup = document.getElementById('screenGroup');
+const screenReports = document.getElementById('screenReports');
+const screenReportGroup = document.getElementById('screenReportGroup');
+const screenFullReport = document.getElementById('screenFullReport');
+const groupsContainer = document.getElementById('groupsContainer');
+const reportsGroupsContainer = document.getElementById('reportsGroupsContainer');
+const reportEntriesContainer = document.getElementById('reportEntriesContainer');
+let currentReportGroupId = null;
+
+function hideAllScreens(){
+  screenGroups.style.display = 'none';
+  screenGroup.style.display = 'none';
+  screenReports.style.display = 'none';
+  screenReportGroup.style.display = 'none';
+  screenFullReport.style.display = 'none';
+}
+
+function renderGroupsScreen(){
+  hideAllScreens();
+  screenGroups.style.display = 'block';
+  groupsContainer.innerHTML = '';
+
+  let allSalary = 0, allRemaining = 0;
+
+  groups.forEach(g=>{
+    const totals = calcGroup(g);
+    allSalary += totals.salary;
+    allRemaining += totals.remaining;
+
+    const card = document.createElement('div');
+    card.className = 'group-card';
+    card.innerHTML =
+      '<div class="ginfo">'+
+        '<div class="gname"></div>'+
+        '<div class="gmeta">'+(g.people||[]).length+' شخص</div>'+
+      '</div>'+
+      '<div class="gremaining"></div>';
+    card.querySelector('.gname').textContent = g.name;
+    card.querySelector('.gremaining').textContent = fmtMoney(totals.remaining);
+    card.addEventListener('click', ()=> openGroup(g.id));
+    groupsContainer.appendChild(card);
+  });
+
+  document.getElementById('allGroupsSalary').textContent = fmtMoney(allSalary);
+  document.getElementById('allGroupsRemaining').textContent = fmtMoney(allRemaining);
+}
+
+document.getElementById('addGroupBtn').addEventListener('click', async ()=>{
+  const name = await showPrompt('اسم المجموعة الجديدة:', 'مجموعة ' + (groups.length + 1));
+  if(name === null) return;
+  const g = { id: uid(), name: name.trim() || ('مجموعة ' + (groups.length + 1)), people: [] };
+  groups.push(g);
+  saveGroups();
+  renderGroupsScreen();
+  openGroup(g.id);
+});
+
+document.getElementById('backToGroupsBtn').addEventListener('click', ()=>{
+  currentGroupId = null;
+  renderGroupsScreen();
+});
+
+document.getElementById('renameGroupBtn').addEventListener('click', async ()=>{
+  const g = groups.find(x=>x.id===currentGroupId);
+  if(!g) return;
+  const name = await showPrompt('اسم المجموعة:', g.name);
+  if(name === null) return;
+  g.name = name.trim() || g.name;
+  saveGroups();
+  document.getElementById('groupTitle').textContent = g.name;
+});
+
+const weekdayStartSelect = document.getElementById('weekdayStartSelect');
+weekdayNames.forEach((name, i)=>{
+  const opt = document.createElement('option');
+  opt.value = i;
+  opt.textContent = name;
+  weekdayStartSelect.appendChild(opt);
+});
+weekdayStartSelect.addEventListener('change', ()=>{
+  const g = currentGroup();
+  if(!g) return;
+  g.startWeekday = parseInt(weekdayStartSelect.value, 10);
+  saveGroups();
+  renderPeople();
+});
+
+function openGroup(id){
+  currentGroupId = id;
+  const g = groups.find(x=>x.id===id);
+  if(!g) return;
+  if(g.startWeekday === undefined || g.startWeekday === null){
+    g.startWeekday = defaultStartWeekday();
+    saveGroups();
+  }
+  document.getElementById('groupTitle').textContent = g.name;
+  weekdayStartSelect.value = g.startWeekday;
+  hideAllScreens();
+  screenGroup.style.display = 'block';
+  renderPeople();
+}
+
+/* ---------- Reports screens ---------- */
+function renderReportsScreen(){
+  hideAllScreens();
+  screenReports.style.display = 'block';
+  reportsGroupsContainer.innerHTML = '';
+
+  if(groups.length === 0){
+    reportsGroupsContainer.innerHTML = '<div class="empty-note">مفيش مجموعات لسه</div>';
+    return;
+  }
+
+  groups.forEach(g=>{
+    let count = 0;
+    (g.people||[]).forEach(p=>{
+      count += (p.history||[]).length;
+      if(p.status === 'settled') count += 1;
+    });
+    const card = document.createElement('div');
+    card.className = 'report-group-card';
+    card.innerHTML =
+      '<div>'+
+        '<div class="gname"></div>'+
+        '<div class="gmeta"></div>'+
+      '</div>'+
+      '<div style="font-size:18px;color:var(--muted);">‹</div>';
+    card.querySelector('.gname').textContent = g.name;
+    card.querySelector('.gmeta').textContent = count > 0 ? (count + ' عملية تصفية مسجلة') : 'لسه محدش اتصفى';
+    card.addEventListener('click', ()=> openReportGroup(g.id));
+    reportsGroupsContainer.appendChild(card);
+  });
+}
+
+function openReportGroup(id){
+  currentReportGroupId = id;
+  const g = groups.find(x=>x.id===id);
+  if(!g) return;
+  hideAllScreens();
+  screenReportGroup.style.display = 'block';
+  document.getElementById('reportGroupTitle').textContent = g.name;
+  renderReportEntries(g);
+}
+
+function openImageViewer(src){
+  const ov = document.createElement('div');
+  ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10000;display:flex;align-items:center;justify-content:center;padding:12px;';
+  const im = document.createElement('img');
+  im.src = src;
+  im.style.cssText = 'max-width:100%;max-height:100%;border-radius:8px;';
+  ov.appendChild(im);
+  ov.addEventListener('click', ()=> ov.remove());
+  document.body.appendChild(ov);
+}
+
+function renderReportEntries(g){
+  let entries = [];
+  (g.people||[]).forEach(p=>{
+    (p.history||[]).forEach(h=>{
+      entries.push({
+        name: p.name || 'بدون اسم',
+        date: h.date,
+        ts: h.ts || 0,
+        days: h.total,
+        expenses: h.expenses,
+        remaining: h.remaining,
+        transferImgs: h.transferImgs || [],
+        receiptImgs: h.receiptImgs || [],
+        pending: false
+      });
+    });
+    if(p.status === 'settled'){
+      const c = calcPerson(p);
+      entries.push({
+        name: p.name || 'بدون اسم',
+        date: p.settledDate,
+        ts: p.settledTs || 0,
+        days: c.total,
+        expenses: parseFloat(p.expenses) || 0,
+        remaining: c.remaining,
+        transferImgs: p.transferImgs || [],
+        receiptImgs: p.receiptImgs || [],
+        pending: true
+      });
+    }
+  });
+
+  entries.sort((a,b)=> (b.ts||0) - (a.ts||0));
+
+  reportEntriesContainer.innerHTML = '';
+  if(entries.length === 0){
+    reportEntriesContainer.innerHTML = '<div class="empty-note">لسه محدش اتصفى في المجموعة دي</div>';
+    return;
+  }
+
+  entries.forEach(en=>{
+    const div = document.createElement('div');
+    div.className = 'report-entry';
+    div.innerHTML =
+      '<div class="rname"></div>'+
+      '<div class="rdate"></div>'+
+      '<div class="rstats">'+
+        '<div class="rstat"><div class="rlabel">الأيام</div><div class="rvalue"></div></div>'+
+        '<div class="rstat"><div class="rlabel">المصاريف</div><div class="rvalue"></div></div>'+
+        '<div class="rstat"><div class="rlabel">المتبقي</div><div class="rvalue"></div></div>'+
+      '</div>';
+    const nameEl = div.querySelector('.rname');
+    nameEl.textContent = en.name;
+    if(en.pending){
+      const tag = document.createElement('span');
+      tag.className = 'pending-tag';
+      tag.textContent = 'لسه ماكملش فترة جديدة';
+      nameEl.appendChild(tag);
+    }
+    div.querySelector('.rdate').textContent = 'اتصفى بتاريخ ' + (en.date || '-');
+    const rvalues = div.querySelectorAll('.rvalue');
+    rvalues[0].textContent = fmt(en.days);
+    rvalues[1].textContent = fmtMoney(en.expenses);
+    rvalues[2].textContent = fmtMoney(en.remaining);
+    [['صور التحويل', en.transferImgs], ['صور إيصال الاستلام', en.receiptImgs]].forEach(([title, imgs])=>{
+      if(!imgs || !imgs.length) return;
+      const box = document.createElement('div');
+      box.style.cssText = 'margin-top:10px;';
+      const lb = document.createElement('div');
+      lb.style.cssText = 'font-size:12px;color:var(--muted);margin-bottom:6px;';
+      lb.textContent = title + ' (' + imgs.length + ')';
+      const row = document.createElement('div');
+      row.style.cssText = 'display:flex;flex-wrap:wrap;gap:8px;';
+      imgs.forEach(src=>{
+        const im = document.createElement('img');
+        im.src = src;
+        im.style.cssText = 'width:72px;height:72px;object-fit:cover;border-radius:8px;cursor:pointer;';
+        im.addEventListener('click', ()=> openImageViewer(src));
+        row.appendChild(im);
+      });
+      box.appendChild(lb); box.appendChild(row);
+      div.appendChild(box);
+    });
+    reportEntriesContainer.appendChild(div);
+  });
+}
+
+document.getElementById('openReportsBtn').addEventListener('click', renderReportsScreen);
+document.getElementById('supervisorSettingsBtn').addEventListener('click',()=>manageSupervisors());
+document.getElementById('backFromReportsBtn').addEventListener('click', renderGroupsScreen);
+document.getElementById('backToReportsBtn').addEventListener('click', renderReportsScreen);
+
+/* ---------- Full report screen (all people, all groups) ---------- */
+function renderFullReport(){
+  hideAllScreens();
+  screenFullReport.style.display = 'block';
+
+  const codeInput = document.getElementById('codeSearchInput');
+  if(codeInput) codeInput.value = '';
+  document.getElementById('codeSearchResult').style.display = 'none';
+  document.getElementById('codeSearchEmpty').style.display = 'none';
+
+  const tbody = document.getElementById('fullReportBody');
+  const emptyNote = document.getElementById('fullReportEmpty');
+  const tableWrap = document.getElementById('fullReportTableWrap');
+  tbody.innerHTML = '';
+
+  let totalDays = 0, totalSalary = 0, totalExpenses = 0, totalRemaining = 0;
+  let rowCount = 0;
+  const perPersonMap = {};
+
+  groups.forEach(g=>{
+    (g.people||[]).forEach(p=>{
+      const c = calcPerson(p);
+      let attended = 0, overtimeTotal = 0;
+      (p.days||[]).forEach(d=>{ if(d) attended++; });
+      (p.overtime||[]).forEach(o=>{ overtimeTotal += parseFloat(o) || 0; });
+      const exp = parseFloat(p.expenses) || 0;
+
+      totalDays += c.total;
+      totalSalary += c.salary;
+      totalExpenses += exp;
+      totalRemaining += c.remaining;
+      rowCount++;
+
+      const tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td class="frGroup"></td>'+
+        '<td class="frName"></td>'+
+        '<td></td><td></td><td></td><td></td><td></td><td></td>';
+      const tds = tr.querySelectorAll('td');
+      tds[0].textContent = g.name;
+      tds[1].textContent = p.name || 'بدون اسم';
+      if(p.status === 'settled'){
+        const badge = document.createElement('span');
+        badge.className = 'pending-tag';
+        badge.textContent = 'متصفي';
+        tds[1].appendChild(badge);
+      }
+      tds[2].textContent = attended;
+      tds[3].textContent = fmt(overtimeTotal);
+      tds[4].textContent = fmt(c.total);
+      tds[5].textContent = fmtMoney(c.salary);
+      tds[6].textContent = fmtMoney(exp);
+      tds[7].textContent = fmtMoney(c.remaining);
+      tbody.appendChild(tr);
+
+      const key = (p.name || 'بدون اسم').trim() || 'بدون اسم';
+      if(!perPersonMap[key]){
+        perPersonMap[key] = { name: key, groupNames: [], totalDays: 0, totalSalary: 0, totalExpenses: 0, totalRemaining: 0 };
+      }
+      const entry = perPersonMap[key];
+      if(entry.groupNames.indexOf(g.name) === -1) entry.groupNames.push(g.name);
+      entry.totalDays += c.total;
+      entry.totalSalary += c.salary;
+      entry.totalExpenses += exp;
+      entry.totalRemaining += c.remaining;
+    });
+  });
+
+  if(rowCount === 0){
+    emptyNote.style.display = 'block';
+    tableWrap.style.display = 'none';
+  } else {
+    emptyNote.style.display = 'none';
+    tableWrap.style.display = 'block';
+  }
+
+  const perPersonSection = document.getElementById('perPersonSection');
+  const perPersonBody = document.getElementById('perPersonBody');
+  perPersonBody.innerHTML = '';
+  const multiGroupEntries = Object.values(perPersonMap).filter(e=> e.groupNames.length > 1);
+
+  if(multiGroupEntries.length === 0){
+    perPersonSection.style.display = 'none';
+  } else {
+    perPersonSection.style.display = 'block';
+    multiGroupEntries.forEach(entry=>{
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td class="frName"></td><td class="frGroup"></td><td></td><td></td><td></td><td></td>';
+      const tds = tr.querySelectorAll('td');
+      tds[0].textContent = entry.name;
+      tds[1].textContent = entry.groupNames.join('، ');
+      tds[2].textContent = fmt(entry.totalDays);
+      tds[3].textContent = fmtMoney(entry.totalSalary);
+      tds[4].textContent = fmtMoney(entry.totalExpenses);
+      tds[5].textContent = fmtMoney(entry.totalRemaining);
+      perPersonBody.appendChild(tr);
+    });
+  }
+
+  document.getElementById('frTotalDays').textContent = fmt(totalDays);
+  document.getElementById('frTotalSalary').textContent = fmtMoney(totalSalary);
+  document.getElementById('frTotalExpenses').textContent = fmtMoney(totalExpenses);
+  document.getElementById('frTotalRemaining').textContent = fmtMoney(totalRemaining);
+}
+
+document.getElementById('openFullReportBtn').addEventListener('click', renderFullReport);
+document.getElementById('backFromFullReportBtn').addEventListener('click', renderGroupsScreen);
+
+/* ---------- Search by person name ---------- */
+function normName(s){ return String(s||'').replace(/[\u064B-\u065F\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/\s+/g,' ').trim().toLowerCase(); }
+function searchByCode(){
+  const codeInput = document.getElementById('codeSearchInput');
+  const code = normName(codeInput.value);
+  const resultBox = document.getElementById('codeSearchResult');
+  const emptyBox = document.getElementById('codeSearchEmpty');
+
+  if(!code){
+    resultBox.style.display = 'none';
+    emptyBox.style.display = 'none';
+    return;
+  }
+
+  let matches = [];
+  groups.forEach(g=>{
+    (g.people||[]).forEach(p=>{
+      if(normName(p.name) === code){
+        matches.push({ group: g, person: p });
+      }
+    });
+  });
+  if(matches.length === 0){
+    groups.forEach(g=>{
+      (g.people||[]).forEach(p=>{
+        if(normName(p.name).indexOf(code) !== -1){
+          matches.push({ group: g, person: p });
+        }
+      });
+    });
+  }
+
+  if(matches.length === 0){
+    resultBox.style.display = 'none';
+    emptyBox.style.display = 'block';
+    return;
+  }
+
+  emptyBox.style.display = 'none';
+  resultBox.style.display = 'block';
+
+  let totalDays = 0, totalSalary = 0, totalExpenses = 0, totalRemaining = 0;
+  let names = [];
+  matches.forEach(m=>{
+    const c = calcPerson(m.person);
+    totalDays += c.total;
+    totalSalary += c.salary;
+    totalExpenses += (parseFloat(m.person.expenses) || 0);
+    totalRemaining += c.remaining;
+    const nm = m.person.name || 'بدون اسم';
+    if(names.indexOf(nm) === -1) names.push(nm);
+  });
+
+  document.getElementById('csName').textContent = names.join(' / ');
+  document.getElementById('csDays').textContent = fmt(totalDays);
+  document.getElementById('csSalary').textContent = fmtMoney(totalSalary);
+  document.getElementById('csExpenses').textContent = fmtMoney(totalExpenses);
+  document.getElementById('csRemaining').textContent = fmtMoney(totalRemaining);
+
+  const dayGrid = document.getElementById('csDayGrid');
+  let html = '';
+  for(let i=0;i<31;i++){
+    let groupsPresent = [];
+    matches.forEach(m=>{
+      if(m.person.days && m.person.days[i]) groupsPresent.push(m.group.name);
+    });
+    const active = groupsPresent.length > 0;
+    const label = active ? groupsPresent.join(' + ') : '-';
+    html +=
+      '<div class="code-day-cell">'+
+        '<div class="day-label">يوم '+(i+1)+'</div>'+
+        '<div class="group-label'+(active?'':' empty')+'">'+label+'</div>'+
+      '</div>';
+  }
+  dayGrid.innerHTML = html;
+}
+
+document.getElementById('codeSearchBtn').addEventListener('click', searchByCode);
+document.getElementById('codeSearchInput').addEventListener('keydown', (e)=>{ if(e.key === 'Enter') searchByCode(); });
+
+const peopleContainer = document.getElementById('peopleContainer');
+
+function currentGroup(){
+  return groups.find(x=>x.id===currentGroupId);
+}
+
+function renderPeople(){
+  const g = currentGroup();
+  if(!g) return;
+  peopleContainer.innerHTML = '';
+  (g.people||[]).forEach((p, idx)=> renderPersonCard(p, idx));
+  recalcGroupTotals();
+  renderDailyAttendance();
+}
+
+function renderDailyAttendance(){
+  const g = currentGroup();
+  const wrap = document.getElementById('dailyAttendanceWrap');
+  if(!g || !wrap) return;
+  const startWeekday = (g.startWeekday !== undefined && g.startWeekday !== null) ? g.startWeekday : defaultStartWeekday();
+  let html = '<div class="attendance-grid">';
+  for(let i=0;i<31;i++){
+    let count = 0;
+    (g.people||[]).forEach(p=>{
+      if(p.days && p.days[i]) count++;
+    });
+    const wLabel = weekdayShort[(startWeekday + i) % 7];
+    html +=
+      '<div class="attendance-cell">'+
+        '<div class="day-label">يوم '+(i+1)+'</div>'+
+        '<div class="weekday-label">'+wLabel+'</div>'+
+        '<div class="attendance-count">'+count+'</div>'+
+      '</div>';
+  }
+  html += '</div>';
+  wrap.innerHTML = html;
+}
+
+document.getElementById('toggleDailyAttendance').addEventListener('click', (e)=>{
+  const wrap = document.getElementById('dailyAttendanceWrap');
+  const showing = wrap.style.display !== 'none';
+  wrap.style.display = showing ? 'none' : 'block';
+  e.target.textContent = showing ? 'عرض عدد الحاضرين كل يوم' : 'إخفاء عدد الحاضرين كل يوم';
+  if(!showing) renderDailyAttendance();
+});
+
+function setMediaBox(box, src){
+  const img = box.querySelector('.media-img');
+  const placeholder = box.querySelector('.media-placeholder');
+  const removeBtn = box.querySelector('.media-remove');
+  if(src){
+    img.src = src;
+    img.style.display = 'block';
+    placeholder.style.display = 'none';
+    removeBtn.style.display = 'flex';
+  } else {
+    img.src = '';
+    img.style.display = 'none';
+    placeholder.style.display = 'flex';
+    removeBtn.style.display = 'none';
+  }
+}
+
+function wireMediaBox(box, input, getSrc, onSet, onRemove){
+  box.addEventListener('click', (e)=>{
+    if(e.target.classList.contains('media-remove')) return;
+    const current = getSrc();
+    if(current){ openLightbox(current); }
+    else { input.click(); }
+  });
+  input.addEventListener('change', function(e){
+    const file = e.target.files[0];
+    if(!file) return;
+    resizeImageToBase64(file).then(function(base64){
+      onSet(base64);
+    }).catch(function(){
+      alert('تعذر معالجة الصورة، جرب صورة تانية');
+    });
+    e.target.value = '';
+  });
+  box.querySelector('.media-remove').addEventListener('click', function(e){
+    e.stopPropagation();
+    onRemove();
+  });
+}
+
+function renderPersonCard(data, idx){
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.dataset.idx = idx;
+
+  const startWeekday = (currentGroup() && currentGroup().startWeekday !== undefined) ? currentGroup().startWeekday : defaultStartWeekday();
+
+  let daysHtml = '';
+  for(let i=1;i<=31;i++){
+    let optsHtml = '';
+    otOptions.forEach(o=>{ optsHtml += '<option value="'+o.v+'">'+o.t+'</option>'; });
+    const wLabel = weekdayShort[(startWeekday + (i-1)) % 7];
+    daysHtml += '<tr><td>'+i+' <span class="wd-inline">'+wLabel+'</span></td><td><button type="button" class="dayChk" data-present="0">✗</button></td><td><select class="dayOt">'+optsHtml+'</select></td></tr>';
+  }
+
+  let expensesHtml = '';
+  for(let i=1;i<=31;i++){
+    const wLabel = weekdayShort[(startWeekday + (i-1)) % 7];
+    expensesHtml += '<div class="expense-cell"><div class="day-label">'+i+'</div><div class="weekday-label">'+wLabel+'</div><input type="number" class="dayExpense" min="0" value="0"></div>';
+  }
+
+  card.innerHTML =
+    '<div class="statusBadge" style="display:none;"></div>'+
+    '<div class="row">'+
+      '<input type="text" class="pName" placeholder="اسم الشخص">'+
+      '<button class="icon-btn removeBtn" aria-label="حذف">✕</button>'+
+    '</div>'+
+    '<div class="row phoneRow">'+
+      '<button type="button" class="icon-btn-media phoneToggle" aria-label="رقم الهاتف">📞</button>'+
+      '<input type="tel" class="pPhone" placeholder="رقم هاتف الشخص" style="display:none;">'+
+      '<a class="icon-btn-media callBtn" style="display:none;" aria-label="اتصال">📱</a>'+
+    '</div>'+
+    '<div class="grid2">'+
+      '<div><label>سعر اليومية</label><input type="number" class="dayRate" value="0" min="0"></div>'+
+      '<div><label>المصاريف (تلقائي)</label><input type="number" class="expenses readonlyField" value="0" min="0" readonly></div>'+
+    '</div>'+
+    '<button class="toggle-btn full-btn toggleExpenses">عرض مصاريف كل يوم</button>'+
+    '<div class="expenses-wrap" style="display:none;">'+
+      '<div class="expenses-grid">'+expensesHtml+'</div>'+
+    '</div>'+
+    '<div class="grid2">'+
+      '<div>'+
+        '<label>الصورة الشخصية</label>'+
+        '<div class="profile-box profileBox">'+
+          '<input type="file" accept="image/*" capture="user" class="profileInput" hidden>'+
+          '<div class="media-placeholder"><span class="micon">👤</span><span>إضافة صورة شخصية</span></div>'+
+          '<img class="media-img" alt="الصورة الشخصية">'+
+          '<button type="button" class="media-remove" aria-label="حذف الصورة">✕</button>'+
+        '</div>'+
+      '</div>'+
+      '<div>'+
+        '<label>صورة البطاقة</label>'+
+        '<div class="media-box idCardBox">'+
+          '<input type="file" accept="image/*" capture="environment" class="idCardInput" hidden>'+
+          '<div class="media-placeholder"><span class="micon">🪪</span><span>تصوير البطاقة</span></div>'+
+          '<img class="media-img" alt="صورة البطاقة">'+
+          '<button type="button" class="media-remove" aria-label="حذف الصورة">✕</button>'+
+        '</div>'+
+      '</div>'+
+      '<div>'+
+        '<label>صورة التحويل</label>'+
+        '<div class="media-box paymentBox">'+
+          '<input type="file" accept="image/*" class="paymentInput" hidden>'+
+          '<div class="media-placeholder"><span class="micon">📸</span><span>فودافون كاش / انستاباي</span></div>'+
+          '<img class="media-img" alt="صورة التحويل">'+
+          '<button type="button" class="media-remove" aria-label="حذف الصورة">✕</button>'+
+        '</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="grid2">'+
+      '<div>'+
+        '<label>بصمة الوجه</label>'+
+        '<button type="button" class="toggle-btn full-btn registerFaceBtn">تسجيل بصمة الوجه</button>'+
+      '</div>'+
+      '<div>'+
+        '<label>الحالة</label>'+
+        '<div class="faceStatusTag">غير مسجلة</div>'+
+      '</div>'+
+    '</div>'+
+    '<button class="toggle-btn full-btn toggleDays">عرض أيام الحضور والأوفر تايم</button>'+
+    '<div class="days-wrap" style="display:none;">'+
+      '<table><thead><tr><th>اليوم</th><th>حضور</th><th>أوفر تايم</th></tr></thead><tbody>'+daysHtml+'</tbody></table>'+
+    '</div>'+
+    '<div class="mini-stats">'+
+      '<div class="mini-stat"><div class="label">الأيام</div><div class="pDays value">0</div></div>'+
+      '<div class="mini-stat"><div class="label">الراتب</div><div class="pSalary value">0</div></div>'+
+      '<div class="mini-stat remainingStat">'+
+        '<div class="label">المتبقي</div>'+
+        '<div class="pRemaining value">0</div>'+
+        '<button type="button" class="settleCheck" title="اتاخد بالكامل - دوس هنا"></button>'+
+      '</div>'+
+    '</div>'+
+    '<button class="toggle-btn full-btn statusActionBtn" style="margin-top:10px;display:none;"></button>'+
+    '<button class="toggle-btn full-btn toggleHistory" style="display:none;">عرض سجل الفترات السابقة</button>'+
+    '<div class="history-wrap" style="display:none;"></div>';
+
+  peopleContainer.appendChild(card);
+
+  card.querySelector('.pName').value = data.name || '';
+  card.querySelector('.dayRate').value = data.rate || 0;
+  const chks = card.querySelectorAll('.dayChk');
+  const ots = card.querySelectorAll('.dayOt');
+  (data.days||[]).forEach((d,i)=>{ if(chks[i]) setDayBtnState(chks[i], !!d); });
+  (data.overtime||[]).forEach((o,i)=>{ if(ots[i]) ots[i].value = o; });
+
+  if(!data.dailyExpenses || !data.dailyExpenses.length){
+    const oldTotal = parseFloat(data.expenses) || 0;
+    data.dailyExpenses = new Array(31).fill('0');
+    if(oldTotal > 0) data.dailyExpenses[0] = String(oldTotal);
+  }
+  const dExpInputs = card.querySelectorAll('.dayExpense');
+  data.dailyExpenses.forEach((v,i)=>{ if(dExpInputs[i]) dExpInputs[i].value = v; });
+  let initialExpTotal = 0;
+  data.dailyExpenses.forEach(v=>{ initialExpTotal += (parseFloat(v)||0); });
+  data.expenses = initialExpTotal;
+  card.querySelector('.expenses').value = fmt(initialExpTotal);
+
+  updateFaceTag(card, !!data.faceDescriptor);
+
+  function syncFromDOM(){
+    const g = currentGroup();
+    const i = parseInt(card.dataset.idx, 10);
+    const p = g.people[i];
+    if(!p) return;
+    p.name = card.querySelector('.pName').value;
+    p.rate = card.querySelector('.dayRate').value;
+    p.phone = card.querySelector('.pPhone').value;
+    p.days = Array.from(card.querySelectorAll('.dayChk')).map(c=> c.dataset.present === '1');
+    p.overtime = Array.from(card.querySelectorAll('.dayOt')).map(s=>s.value);
+    saveGroups();
+    updateCardStats(card, p);
+    recalcGroupTotals();
+    renderDailyAttendance();
+  }
+
+  function syncExpensesFromDOM(){
+    const g = currentGroup();
+    const i = parseInt(card.dataset.idx, 10);
+    const p = g.people[i];
+    if(!p) return;
+    p.dailyExpenses = Array.from(card.querySelectorAll('.dayExpense')).map(inp=>inp.value);
+    let total = 0;
+    p.dailyExpenses.forEach(v=>{ total += (parseFloat(v)||0); });
+    p.expenses = total;
+    card.querySelector('.expenses').value = fmt(total);
+    saveGroups();
+    updateCardStats(card, p);
+    recalcGroupTotals();
+  }
+
+  card.querySelector('.removeBtn').addEventListener('click', ()=>{
+    const g = currentGroup();
+    const i = parseInt(card.dataset.idx, 10);
+    g.people.splice(i, 1);
+    saveGroups();
+    renderPeople();
+  });
+  card.querySelector('.toggleDays').addEventListener('click', (e)=>{
+    const wrap = card.querySelector('.days-wrap');
+    const showing = wrap.style.display !== 'none';
+    wrap.style.display = showing ? 'none' : 'block';
+    e.target.textContent = showing ? 'عرض أيام الحضور والأوفر تايم' : 'إخفاء أيام الحضور والأوفر تايم';
+  });
+  card.querySelector('.toggleExpenses').addEventListener('click', (e)=>{
+    const wrap = card.querySelector('.expenses-wrap');
+    const showing = wrap.style.display !== 'none';
+    wrap.style.display = showing ? 'none' : 'block';
+    e.target.textContent = showing ? 'عرض مصاريف كل يوم' : 'إخفاء مصاريف كل يوم';
+  });
+  card.querySelectorAll('.dayChk').forEach(btn=> btn.addEventListener('click', ()=>{
+    setDayBtnState(btn, btn.dataset.present !== '1');
+    syncFromDOM();
+  }));
+  card.querySelectorAll('.dayOt').forEach(s=> s.addEventListener('change', syncFromDOM));
+  card.querySelectorAll('.dayExpense').forEach(inp=> inp.addEventListener('input', syncExpensesFromDOM));
+  card.querySelector('.dayRate').addEventListener('input', syncFromDOM);
+  card.querySelector('.pName').addEventListener('input', syncFromDOM);
+
+  card.querySelector('.registerFaceBtn').addEventListener('click', ()=>{
+    const i = parseInt(card.dataset.idx, 10);
+    openFaceCapture('register', i);
+  });
+
+  const phoneToggle = card.querySelector('.phoneToggle');
+  const phoneInput = card.querySelector('.pPhone');
+  const callBtn = card.querySelector('.callBtn');
+
+  phoneInput.value = data.phone || '';
+  function updateCallBtn(){
+    const v = phoneInput.value.trim();
+    if(v){ callBtn.style.display = 'flex'; callBtn.href = 'tel:' + v; }
+    else{ callBtn.style.display = 'none'; callBtn.removeAttribute('href'); }
+  }
+  if(data.phone){ phoneInput.style.display = 'block'; }
+  updateCallBtn();
+
+  phoneToggle.addEventListener('click', ()=>{
+    const showing = phoneInput.style.display !== 'none';
+    phoneInput.style.display = showing ? 'none' : 'block';
+    if(!showing) phoneInput.focus();
+  });
+  phoneInput.addEventListener('input', ()=>{ syncFromDOM(); updateCallBtn(); });
+
+  const profileBox = card.querySelector('.profileBox');
+  const profileInput = card.querySelector('.profileInput');
+  wireMediaBox(profileBox, profileInput,
+    ()=>{ const g=currentGroup(); const i=parseInt(card.dataset.idx,10); return (g.people[i]||{}).profileImg||''; },
+    async src=>{ const g=currentGroup(); const i=parseInt(card.dataset.idx,10); g.people[i].profileImg=src; saveGroups(); },
+    ()=>{ const g=currentGroup(); const i=parseInt(card.dataset.idx,10); delete g.people[i].profileImg; saveGroups(); renderPeople(); }
+  );
+
+  const idCardBox = card.querySelector('.idCardBox');
+  const idCardInput = card.querySelector('.idCardInput');
+  setMediaBox(idCardBox, data.idCardImg || '');
+  wireMediaBox(
+    idCardBox, idCardInput,
+    ()=>{ const g=currentGroup(); const i=parseInt(card.dataset.idx,10); return (g.people[i]||{}).idCardImg || ''; },
+    (base64)=>{
+      const g = currentGroup(); const i = parseInt(card.dataset.idx,10);
+      g.people[i].idCardImg = base64;
+      saveGroups();
+      setMediaBox(idCardBox, base64);
+    },
+    ()=>{
+      const g = currentGroup(); const i = parseInt(card.dataset.idx,10);
+      g.people[i].idCardImg = '';
+      saveGroups();
+      setMediaBox(idCardBox, '');
+    }
+  );
+
+  const paymentBox = card.querySelector('.paymentBox');
+  const paymentInput = card.querySelector('.paymentInput');
+  setMediaBox(paymentBox, data.paymentImg || '');
+  wireMediaBox(
+    paymentBox, paymentInput,
+    ()=>{ const g=currentGroup(); const i=parseInt(card.dataset.idx,10); return (g.people[i]||{}).paymentImg || ''; },
+    (base64)=>{
+      const g = currentGroup(); const i = parseInt(card.dataset.idx,10);
+      g.people[i].paymentImg = base64;
+      saveGroups();
+      setMediaBox(paymentBox, base64);
+    },
+    ()=>{
+      const g = currentGroup(); const i = parseInt(card.dataset.idx,10);
+      g.people[i].paymentImg = '';
+      saveGroups();
+      setMediaBox(paymentBox, '');
+    }
+  );
+
+  const statusBadge = card.querySelector('.statusBadge');
+  const statusActionBtn = card.querySelector('.statusActionBtn');
+  const settleCheckBtn = card.querySelector('.settleCheck');
+  const toggleHistoryBtn = card.querySelector('.toggleHistory');
+  const historyWrap = card.querySelector('.history-wrap');
+
+  function renderHistory(p){
+    if(!p.history || !p.history.length){
+      toggleHistoryBtn.style.display = 'none';
+      historyWrap.style.display = 'none';
+      historyWrap.innerHTML = '';
+      return;
+    }
+    toggleHistoryBtn.style.display = 'block';
+    historyWrap.innerHTML = p.history.slice().reverse().map(function(h){
+      return '<div class="history-item">'+
+        '<div class="history-date">فترة انتهت بتصفية بتاريخ '+h.date+'</div>'+
+        '<div class="history-line">أيام: '+fmt(h.total)+' • راتب: '+fmtMoney(h.salary)+' • مصاريف: '+fmtMoney(h.expenses)+' • المتبقي وقتها: '+fmtMoney(h.remaining)+(window.xHistoryImgs?window.xHistoryImgs(h):'')+'</div>'+
+      '</div>';
+    }).join('');
+  }
+
+  function setAttendanceLocked(locked){
+    card.querySelectorAll('.dayChk').forEach(btn=>{ btn.disabled = locked; });
+    card.querySelectorAll('.dayOt').forEach(sel=>{ sel.disabled = locked; });
+    card.querySelectorAll('.dayExpense').forEach(inp=>{ inp.disabled = locked; if(locked) inp.classList.add('lockedField'); else inp.classList.remove('lockedField'); });
+  }
+
+  function renderStatus(p){
+    const isSettled = p.status === 'settled';
+    card.classList.toggle('settledCard', isSettled);
+    setAttendanceLocked(isSettled);
+    settleCheckBtn.classList.toggle('checked', isSettled);
+    settleCheckBtn.title = isSettled ? 'اتصفى بالكامل - دوس هنا لو ده غلط' : 'اتاخد بالكامل - دوس هنا';
+    if(isSettled){
+      statusBadge.style.display = 'flex';
+      statusBadge.innerHTML = '<span class="dot"></span><span>الحساب متصفي بتاريخ '+(p.settledDate||'')+' وموجود في التقارير — لسه مسجل نفس البيانات لحد ما تبدأ فترة جديدة</span>';
+      statusActionBtn.style.display = 'block';
+      statusActionBtn.className = 'toggle-btn full-btn statusActionBtn resumeBtn';
+      statusActionBtn.textContent = 'ابدأ فترة جديدة (يرجع العداد صفر)';
+    } else {
+      statusBadge.style.display = 'none';
+      statusBadge.innerHTML = '';
+      statusActionBtn.style.display = 'none';
+    }
+  }
+
+  renderHistory(data);
+  renderStatus(data);
+
+  toggleHistoryBtn.addEventListener('click', (e)=>{
+    const showing = historyWrap.style.display !== 'none';
+    historyWrap.style.display = showing ? 'none' : 'block';
+    e.target.textContent = showing ? 'عرض سجل الفترات السابقة' : 'إخفاء سجل الفترات السابقة';
+  });
+
+  settleCheckBtn.addEventListener('click', async ()=>{
+    const g = currentGroup();
+    const i = parseInt(card.dataset.idx, 10);
+    const p = g.people[i];
+    if(!p) return;
+    const personName = p.name || 'الشخص ده';
+
+    if(p.status !== 'settled'){
+      const sure = await showConfirm('هل "'+personName+'" اخد كل المتبقي ليه بالكامل؟ هينزل على طول في قائمة التقارير بعدد أيامه ومصاريفه والمتبقي ليه وتاريخ النهاردة.');
+      if(!sure) return;
+      p.status = 'settled';
+      p.settledDate = new Date().toLocaleDateString('ar-EG');
+      p.settledTs = Date.now();
+    } else {
+      const sure = await showConfirm('تراجع عن تصفية "'+personName+'"؟ (يعني هو لسه شغال وماخدش حسابه)');
+      if(!sure) return;
+      p.status = 'active';
+      p.settledDate = '';
+      p.settledTs = '';
+    }
+    saveGroups();
+    renderStatus(p);
+  });
+
+  statusActionBtn.addEventListener('click', async ()=>{
+    const g = currentGroup();
+    const i = parseInt(card.dataset.idx, 10);
+    const p = g.people[i];
+    if(!p || p.status !== 'settled') return;
+    const personName = p.name || 'الشخص ده';
+
+    const c = calcPerson(p);
+    const sure = await showConfirm('هيتم حفظ الفترة القديمة بتاعة "'+personName+'" في السجل، وهيبدأ العد من الصفر تاني (الأيام والأوفر تايم والمصاريف). سعر اليومية والاسم والرقم والصور هيفضلوا ثابتين. متأكد إنه رجع يشتغل؟');
+    if(!sure) return;
+    if(!p.history) p.history = [];
+    p.history.push({
+      date: p.settledDate || new Date().toLocaleDateString('ar-EG'),
+      ts: p.settledTs || Date.now(),
+      total: c.total,
+      salary: c.salary,
+      expenses: parseFloat(p.expenses) || 0,
+      remaining: c.remaining,
+      transferImgs: p.transferImgs || [],
+      receiptImgs: p.receiptImgs || []
+    });
+    p.transferImgs = []; p.receiptImgs = [];
+    p.days = [];
+    p.overtime = [];
+    p.dailyExpenses = new Array(31).fill('0');
+    p.expenses = 0;
+    p.status = 'active';
+    p.settledDate = '';
+    p.settledTs = '';
+    saveGroups();
+    renderPeople();
+  });
+
+  updateCardStats(card, data);
+}
+
+function updateCardStats(card, p){
+  const c = calcPerson(p);
+  card.querySelector('.pDays').textContent = fmt(c.total);
+  card.querySelector('.pSalary').textContent = fmtMoney(c.salary);
+  card.querySelector('.pRemaining').textContent = fmtMoney(c.remaining);
+}
+
+function recalcGroupTotals(){
+  const g = currentGroup();
+  if(!g) return;
+  const totals = calcGroup(g);
+  document.getElementById('grandSalary').textContent = fmtMoney(totals.salary);
+  document.getElementById('grandRemaining').textContent = fmtMoney(totals.remaining);
+}
+
+document.getElementById('addPersonBtn').addEventListener('click', ()=>{
+  const g = currentGroup();
+  if(!g) return;
+  g.people.push({ name:'', rate:0, expenses:0, dailyExpenses:[], days:[], overtime:[], phone:'', idCardImg:'', paymentImg:'', faceDescriptor:null, history:[], status:'active', settledDate:'', settledTs:'' });
+  saveGroups();
+  renderPeople();
+});
+
+function escapeHtml(v){const d=document.createElement('div');d.textContent=v==null?'':String(v);return d.innerHTML;}
+function initSupervisorMode(){document.getElementById('roleBadge').textContent='👷 المشرف';document.querySelectorAll('#appContent > *:not(.topbar):not(#supervisorContent)').forEach(e=>e.style.display='none');document.getElementById('supervisorContent').style.display='block';renderSupervisorDashboard();}
+function renderSupervisorDashboard(){
+ const sup=document.getElementById('supervisorContent'); let html='<div class="back-row"><div class="group-title">لوحة المشرف</div></div><button class="toggle-btn full-btn" id="supervisorFaceBtn">📷 تسجيل حضور ببصمة الوجه</button><div class="empty-note" style="margin-bottom:12px;">المشرف يقدر يسجل حضور وغياب فقط، ولا تظهر له الرواتب أو المصاريف أو أرقام الهواتف أو الصور.</div>';
+ (groups||[]).forEach(g=>{html+='<div class="supervisor-card"><h1 style="text-align:right;font-size:16px;margin:0 0 8px;">'+escapeHtml(g.name)+'</h1>';(g.people||[]).forEach((p,idx)=>{if(p.status==='settled')return;const present=p.days&&p.days[new Date().getDate()-1];html+='<div class="supervisor-person"><div><strong>'+escapeHtml(p.name||'بدون اسم')+'</strong></div><button class="present-btn '+(present?'done':'')+'" data-gid="'+g.id+'" data-pidx="'+idx+'">'+(present?'✓ حاضر':'تسجيل حضور')+'</button></div>';});html+='</div>';});
+ if(!(groups||[]).length)html+='<div class="empty-note">لا توجد مجموعات حالياً</div>';sup.innerHTML=html;
+ sup.querySelectorAll('.present-btn').forEach(b=>b.addEventListener('click',()=>{const g=groups.find(x=>x.id===b.dataset.gid);if(!g)return;currentGroupId=g.id;markPersonPresentToday(parseInt(b.dataset.pidx,10));}));
+ const fb=sup.querySelector('#supervisorFaceBtn');if(fb)fb.addEventListener('click',()=>{if(!groups.length)return alert('لا توجد مجموعات');currentGroupId=groups[0].id;openFaceCapture('checkin',null);});
+}
+
+function initApp(){
+  loadGroups();
+  if(groups.length === 0){
+    groups.push({ id: uid(), name: 'المجموعة الأولى', people: [] });
+    saveGroups();
+  }
+  renderGroupsScreen();
+  ensureFaceModelsLoaded().catch(()=>{});
+}
+
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+  });
+}
+document.getElementById('logoutBtn').addEventListener('click',()=>location.reload());
+</script>
+<script src="extras.js"></script>
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="sync.js"></script>
+</body>
+</html>
